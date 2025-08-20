@@ -17,7 +17,7 @@ const allTops = ['tankini','midkini','crop','bralette'];
 const allBottoms = ['high-rise','mid-rise','bikini', 'low-rise'];
 
 // Build Collections list for use in both Liquid and JS
-{% include 'nani-by-you-collections' %}
+{% include 'collections' %}
 {% for tag in collectionTags %}
   allCollections.push( "{{ tag }}" );
 {% endfor %}
