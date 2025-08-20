@@ -9,7 +9,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="{{ settings.color_button }}">
-  <meta name="facebook-domain-verification" content="r31cv6e0jfpc3m4whw0fb30blrygw8" />
+  <meta name="facebook-domain-verification" content="" />
   <link rel="canonical" href="{{ canonical_url }}">
   
   {%- if settings.favicon != blank -%}
@@ -77,72 +77,24 @@
     <noscript><link rel="stylesheet" href="{{ 'currency-flags.css' | asset_url }}"></noscript>
   {% endif %}
   
-  <!-- CUSTOM NANI BY YOU SCRIPTS -->
-  {% include 'nani-by-you-scripts' %}
+  <!-- CUSTOM SCRIPTS -->
+  {% include 'nby-scripts' %}
 
   <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
-
-  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
   <script src="{{ 'custom.js' | asset_url }}"></script>
 
   {%- if request.page_type contains 'customers/' -%}
     <script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script>
   {%- endif -%}
-
-  <script type="text/javascript">(function e(){var e=document.createElement("script");e.type="text/javascript",e.async=true,e.src="//staticw2.yotpo.com/9hoRjJmFQhM9Hrd2r9XoTJFpI3pjk0UJpNzIJXYq/widget.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})();</script>
-{{ 'ndnapps-easyfaqs.css' | asset_url | stylesheet_tag }}
-<!-- Hotjar Tracking Code for https://www.naniswimwear.com/ -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:757627,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
- 
-  
-  <script>
-  !function(c,n,r,t){if(!c[r]){var i,d,p=[];d="PROD"!==t&&t?"STAGING"===t?"https://cdn.gladly.qa/gladly/chat-sdk/widget.js":t:"https://cdn.gladly.com/chat-sdk/widget.js",c[r]={init:function(){i=arguments;var e={then:function(t){return p.push({type:"t",next:t}),e},catch:function(t){return p.push({type:"c",next:t}),e}};return e}},c.__onHelpAppHostReady__=function(t){if(delete c.__onHelpAppHostReady__,(c[r]=t).loaderCdn=d,i)for(var e=t.init.apply(t,i),n=0;n<p.length;n++){var a=p[n];e="t"===a.type?e.then(a.next):e.catch(a.next)}},function(){try{var t=n.getElementsByTagName("script")[0],e=n.createElement("script");e.async=!0,e.src=d+"?q="+(new Date).getTime(),t.parentNode.insertBefore(e,t)}catch(t){}}()}}
-  (window,document,'Gladly','PROD')
-</script>
-  
-  
-  <script>
-  window.gladlyConfig = {
-    appId: 'naniswimwear.com'
-  };
-</script>
-  
   
 {% include 'pagefly-header' %}
   
   <!-- SLICK SLIDER -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- NANI BY YOU STYLES -->
-  {{ 'nani-by-you.css' | asset_url | stylesheet_tag }} 
-  
-  <!-- Start VWO Async SmartCode -->
-  <script type='text/javascript'>
-  window._vwo_code = window._vwo_code || (function(){
-  var account_id=573283,
-  settings_tolerance=2000,
-  library_tolerance=2500,
-  use_existing_jquery=false,
-  is_spa=1,
-  hide_element='body',
-
-  /* DO NOT EDIT BELOW THIS LINE */
-  f=false,d=document,code={use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){
-  window.settings_timer=setTimeout(function () {_vwo_code.finish() },settings_tolerance);var a=d.createElement('style'),b=hide_element?hide_element+'{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}':'',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&f='+(+is_spa)+'&r='+Math.random());return settings_timer; }};window._vwo_settings_timer = code.init(); return code; }());
-  </script>
-  <!-- End VWO Async SmartCode -->
-  
-  <script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/1KEuFtttzL14Klv_x7BlBQ" async></script>
+  <!-- STYLES -->
+  {{ 'nby.css' | asset_url | stylesheet_tag }} 
 </head> 
 
 <body class="nby-page" data-center-text="{{settings.type_body_align_text}}" data-button_style="{{settings.button_style}}" data-type_header_capitalize="{{settings.type_header_capitalize}}" data-type_headers_align_text="{{settings.type_headers_align_text}}" data-type_product_capitalize="{{settings.type_product_capitalize}}" data-swatch_style="{{settings.swatch_style}}"
@@ -216,7 +168,7 @@ x-init="calculateFreeShippingBar()"
                         <div id="filter-menu-7" class="collapsible-content collapsible-content--sidebar">
                             <div class="collapsible-content__inner">
                                 <ul class="no-bullets tag-list tag-list--checkboxes">
-                                    {% include 'nani-by-you-top-coverage' %}
+                                    {% include 'nby-top-coverage' %}
                                 </ul>
                             </div>
                         </div>
@@ -236,8 +188,8 @@ x-init="calculateFreeShippingBar()"
                         <div id="filter-menu-8" class="collapsible-content collapsible-content--sidebar" style="height: 0px;">
                             <div class="collapsible-content__inner">
                                 <ul class="no-bullets tag-list tag-list--checkboxes">
-                                    {% include 'nani-by-you-collections' %}
-                                  	{% include 'nani-by-you-collections-builder' %}
+                                    {% include 'nby-collections' %}
+                                  	{% include 'nby-collections-builder' %}
                                 </ul>
                             </div>
                         </div>
@@ -257,7 +209,7 @@ x-init="calculateFreeShippingBar()"
                         <div id="filter-menu-9" class="collapsible-content collapsible-content--sidebar" style="height: 0px;">
                             <div class="collapsible-content__inner">
                                 <ul class="no-bullets tag-list tag-list--swatches">
-                                    {% include 'nani-by-you-colors' %}
+                                    {% include 'nby-colors' %}
                                 </ul>
                             </div>
                         </div>
@@ -281,7 +233,7 @@ x-init="calculateFreeShippingBar()"
                         <div id="filter-menu-10" class="collapsible-content collapsible-content--sidebar">
                             <div class="collapsible-content__inner">
                                 <ul class="no-bullets tag-list tag-list--checkboxes">
-                                    {% include 'nani-by-you-bottom-coverage' %}
+                                    {% include 'nby-bottom-coverage' %}
                                 </ul>
                             </div>
                         </div>
@@ -301,7 +253,7 @@ x-init="calculateFreeShippingBar()"
                         <div id="filter-menu-11" class="collapsible-content collapsible-content--sidebar" style="height: 0px;">
                             <div class="collapsible-content__inner">
                                 <ul class="no-bullets tag-list tag-list--checkboxes">
-                                    {% include 'nani-by-you-collections-builder' %}
+                                    {% include 'nby-collections-builder' %}
                                 </ul>
                             </div>
                         </div>
@@ -321,7 +273,7 @@ x-init="calculateFreeShippingBar()"
                         <div id="filter-menu-12" class="collapsible-content collapsible-content--sidebar" style="height: 0px;">
                             <div class="collapsible-content__inner">
                                 <ul class="no-bullets tag-list tag-list--swatches">
-                                    {% include 'nani-by-you-colors' %}
+                                    {% include 'nby-colors' %}
                                 </ul>
                             </div>
                         </div>
@@ -376,10 +328,8 @@ x-init="calculateFreeShippingBar()"
   {% if template contains 'product' %}
     {% render 'recently-viewed-product-template' %}
   {% endif %}
-<script src='{{ 'ndnapps-easyfaqs.js' | asset_url }}' defer='defer'></script>
 
 {% render 'simply-insurance' %}
-<script src="https://cdn.static.kiwisizing.com/SizingPlugin.prod.js?v=307&shop=nani-swimwear.myshopify.com"></script>
 {%- render 'layouthub_footer' -%} 
  
   
