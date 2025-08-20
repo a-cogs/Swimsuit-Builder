@@ -1,4 +1,4 @@
-# Nani-Swimsuit-Builder
+# Swimsuit-Builder
 Mix and match swimsuit builder created for use in Shopify.
 
 It loads all tops and bottoms into parallel sliders that are then used to create a pair the consumer likes. It has the following features:
